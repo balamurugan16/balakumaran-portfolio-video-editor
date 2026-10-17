@@ -1,9 +1,5 @@
 import { ReelItem, ProfileData } from '../types/portfolio';
 
-import headshotImg from '../assets/images/editor_headshot_portrait_1792164864395.jpg';
-
-export { headshotImg };
-
 export const PROFILE_DATA: ProfileData = {
   name: 'Balakumaran D',
   title: 'Junior Video Editor',
@@ -102,7 +98,7 @@ export const PROFILE_DATA: ProfileData = {
       institution: 'Aevy Video School (Aevy TV)',
       program: 'Video Editing & Visual Storytelling Cohort',
       cohort: '12-Week Intensive Video Mastery Program',
-      period: 'Cohort Graduate',
+      period: '2025',
       summary:
         'An intensive, output-driven cohort covering modern digital video production for the creator economy. Beyond software timelines, the curriculum focused on retention psychology, narrative pacing, multi-layered sound design, and documentary-style motion design with frame-by-frame industry mentor reviews.',
       skillsLearned: [

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ProfileData } from '../types/portfolio';
-import { headshotImg } from '../data/portfolioData';
 import {
   Mail,
   Phone,
