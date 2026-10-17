@@ -53,6 +53,11 @@ export const ReelCard: React.FC<ReelCardProps> = ({ reel, onSelect }) => {
               <span>Viral Reach</span>
             </span>
           )}
+          {reel.viralStatus === 'unknown' && (
+            <span className="px-2 py-0.5 bg-zinc-900/75 text-white rounded text-[10px] font-mono shrink-0">
+              Reach Unknown
+            </span>
+          )}
         </div>
 
         {/* Center Play Button on Hover */}
@@ -77,7 +82,7 @@ export const ReelCard: React.FC<ReelCardProps> = ({ reel, onSelect }) => {
           <div className="flex items-center gap-2.5 pt-2 text-xs font-mono text-white/90 border-t border-white/10">
             <span className="flex items-center gap-1">
               <Eye className="w-3.5 h-3.5 text-amber-300" />
-              <span className="font-bold">{reel.views} Views</span>
+              <span className="font-bold">{reel.views === 'Unavailable' ? 'Views unavailable' : `${reel.views} Views`}</span>
             </span>
 
             {reel.likes && (

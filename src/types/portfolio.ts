@@ -2,10 +2,12 @@ export interface ReelItem {
   id: string;
   title: string;
   client: string;
-  category: 'weddings' | 'couples' | 'talking-head' | 'street';
+  category: 'weddings' | 'couples' | 'talking-head' | 'street' | 'featured';
   categoryLabel: string;
   views: string; // e.g. "2.4M", "620K", "3.2 Lakhs"
   rawViews: number; // for sorting by views
+  uploadDate?: string;
+  viralStatus?: 'viral' | 'not-viral' | 'unknown';
   isHighReach?: boolean; // Highlight badge for viral videos
   likes?: string;
   comments?: string;
@@ -33,6 +35,7 @@ export interface ProfileData {
     name: string;
     experience: string;
     description: string;
+    icon: string;
   }[];
   experience: {
     id: string;

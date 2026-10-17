@@ -107,7 +107,9 @@ export const ReelModal: React.FC<ReelModalProps> = ({ reel, onClose }) => {
                 {reel.title}
               </h3>
               <p className="text-xs text-zinc-500 font-mono mb-4">
-                Software: {reel.toolsUsed}
+                Editing tools: {reel.toolsUsed}
+                {reel.uploadDate && <span> · Posted {reel.uploadDate}</span>}
+                {reel.viralStatus === 'unknown' && <span> · Reach classification unavailable</span>}
               </p>
 
               {/* Engagement Stats Box */}
@@ -120,6 +122,12 @@ export const ReelModal: React.FC<ReelModalProps> = ({ reel, onClose }) => {
                   <div>
                     <span className="block font-bold text-zinc-900 text-sm">{reel.likes}</span>
                     <span className="text-[10px] text-zinc-500 uppercase">Likes</span>
+                  </div>
+                )}
+                {reel.comments && (
+                  <div>
+                    <span className="block font-bold text-zinc-900 text-sm">{reel.comments}</span>
+                    <span className="text-[10px] text-zinc-500 uppercase">Comments</span>
                   </div>
                 )}
                 {reel.shares && (

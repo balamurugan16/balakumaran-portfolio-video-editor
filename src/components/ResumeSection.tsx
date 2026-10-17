@@ -1,7 +1,6 @@
 import React from 'react';
 import { ProfileData } from '../types/portfolio';
 import { headshotImg } from '../data/portfolioData';
-import { ToolLogo } from './ToolLogo';
 import {
   Mail,
   Phone,
@@ -119,7 +118,7 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({ profile, onOpenRes
                     key={skill.name}
                     className="p-3.5 rounded-xl bg-zinc-50/80 hover:bg-zinc-50 border border-zinc-200/70 flex items-start gap-3.5 transition-colors shadow-2xs"
                   >
-                    <ToolLogo name={skill.name} className="w-10 h-10 shrink-0 mt-0.5" />
+                    <img src={skill.icon} alt={skill.name} className="w-8 h-8 rounded-lg object-contain shrink-0" />
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between gap-2">
                         <span className="font-display font-bold text-xs text-zinc-900">
@@ -217,7 +216,7 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({ profile, onOpenRes
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-zinc-600 shrink-0" />
-                  <span>Dynamic animated kinetic subtitles formatted in CapCut & Premiere</span>
+                  <span>Custom visual assets and graphics created in Photoshop & Premiere</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-zinc-600 shrink-0" />

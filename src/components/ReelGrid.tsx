@@ -10,7 +10,6 @@ interface ReelGridProps {
 
 export const ReelGrid: React.FC<ReelGridProps> = ({ reels, onSelectReel }) => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<'default' | 'views'>('default');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   const filterOptions = [
@@ -61,11 +60,6 @@ export const ReelGrid: React.FC<ReelGridProps> = ({ reels, onSelectReel }) => {
     return matchesCategory && matchesSearch;
   });
 
-  // Sort logic
-  if (sortBy === 'views') {
-    filteredReels = [...filteredReels].sort((a, b) => (b.rawViews || 0) - (a.rawViews || 0));
-  }
-
   const highReachCount = reels.filter((r) => r.isHighReach).length;
 
   return (
@@ -82,21 +76,9 @@ export const ReelGrid: React.FC<ReelGridProps> = ({ reels, onSelectReel }) => {
             <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-zinc-950 tracking-tight">
               My Work
             </h2>
-            <p className="text-zinc-600 text-sm mt-1 max-w-xl">
-              From million-view romantic couple teasers and emotional wedding ceremonies to high-retention creator explainers and fast street transitions.
+            <p className="text-zinc-600 text-sm mt-1 max-w-3xl">
+              From brand promotional advertisements, million-view romantic couple teasers and emotional wedding ceremonies to high-retention creator talking head and fast street transitions.
             </p>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              href="https://www.instagram.com/dbalakumaran23/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 px-3.5 py-2 text-xs font-medium text-zinc-700 hover:text-black bg-white hover:bg-zinc-50 border border-zinc-200 rounded-lg transition-colors shadow-sm"
-            >
-              <Instagram className="w-3.5 h-3.5 text-pink-600" />
-              <span>@dbalakumaran23 on Instagram</span>
-            </a>
           </div>
         </div>
 
@@ -144,37 +126,6 @@ export const ReelGrid: React.FC<ReelGridProps> = ({ reels, onSelectReel }) => {
                 <span className="ml-1.5 font-mono text-[11px] opacity-70">({opt.count})</span>
               </button>
             ))}
-          </div>
-
-          {/* Search & Sort controls */}
-          <div className="flex items-center gap-2.5 shrink-0">
-            {/* Search input */}
-            <div className="relative w-48 sm:w-56">
-              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-400" />
-              <input
-                type="text"
-                placeholder="Search reel, client, tool..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-8 pr-3 py-1.5 bg-white border border-zinc-200 rounded-lg text-xs text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-zinc-900"
-              />
-            </div>
-
-            {/* Sort toggle */}
-            <button
-              onClick={() => setSortBy(sortBy === 'default' ? 'views' : 'default')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer border ${
-                sortBy === 'views'
-                  ? 'bg-zinc-900 text-white border-zinc-900'
-                  : 'bg-white text-zinc-700 hover:text-zinc-900 border-zinc-200'
-              }`}
-              title="Sort by highest views"
-            >
-              <ArrowUpDown className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">
-                {sortBy === 'views' ? 'Highest Views' : 'Curated'}
-              </span>
-            </button>
           </div>
         </div>
 

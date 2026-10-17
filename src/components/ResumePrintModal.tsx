@@ -1,7 +1,6 @@
 import React from 'react';
 import { X, Printer, Mail, Phone, Instagram, MapPin } from 'lucide-react';
 import { ProfileData } from '../types/portfolio';
-import { ToolLogo } from './ToolLogo';
 
 interface ResumePrintModalProps {
   isOpen: boolean;
@@ -105,7 +104,6 @@ export const ResumePrintModal: React.FC<ResumePrintModalProps> = ({ isOpen, onCl
                   key={skill.name}
                   className="p-2.5 rounded-lg bg-zinc-50 border border-zinc-200/80 flex items-start gap-2.5"
                 >
-                  <ToolLogo name={skill.name} className="w-8 h-8 shrink-0 mt-0.5" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between gap-1">
                       <span className="font-bold text-zinc-900 truncate">{skill.name}</span>
