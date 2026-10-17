@@ -73,7 +73,7 @@ export default {
       ? await env.R2_BUCKET.head(key)
       : await env.R2_BUCKET.get(
           key,
-          rangeHeader ? { range: new Headers({ Range: rangeHeader }) } : undefined,
+          rangeHeader ? { range: request.headers } : undefined,
         );
 
     if (!object) return new Response('Not found', { status: 404 });
@@ -86,7 +86,13 @@ export default {
       'X-Content-Type-Options': 'nosniff',
     });
     object.writeHttpMetadata?.(headers);
-    headers.set('Content-Type', object.httpMetadata?.contentType ?? contentTypeFor(key));
+    // R2 upload metadata is not always populated consistently; the extension
+    // is authoritative for these known public media keys, especially MP4s.
+    const extension = key.slice(key.lastIndexOf('.')).toLowerCase();
+    headers.set(
+      'Content-Type',
+      CONTENT_TYPES[extension] ?? object.httpMetadata?.contentType ?? 'application/octet-stream',
+    );
     headers.set('ETag', object.httpEtag);
 
     if (object.range) {
