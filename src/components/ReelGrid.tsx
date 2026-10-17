@@ -91,7 +91,7 @@ export const ReelGrid: React.FC<ReelGridProps> = ({ reels, onSelectReel }) => {
             <div>
               <span className="font-bold text-zinc-950">High Reach & Viral Showcase:</span>{' '}
               <span className="text-zinc-600">
-                Multiple reels generated lakhs and millions of views across Instagram and vertical feeds.
+                Multiple reels generated lakhs and millions of views on Instagram
               </span>
             </div>
           </div>

@@ -28,7 +28,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Lead Bio */}
           <p className="text-zinc-600 text-base sm:text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
-            Hi, I’m <strong>Balakumaran D</strong>. I edit engaging reels and short-form videos with clean narrative rhythm, retention-focused pacing, and natural color grading across Instagram and YouTube.
+            Hi, I’m <strong>Balakumaran</strong>. I edit engaging reels and short-form videos with clean narration, retention-focused pacing, and natural color grading across Instagram and YouTube.
           </p>
 
           {/* Quick Contact & Handle Pills */}
