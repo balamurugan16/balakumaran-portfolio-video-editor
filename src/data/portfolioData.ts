@@ -13,31 +13,30 @@ export const PROFILE_DATA: ProfileData = {
   instagramHandle: '@dbalakumaran23',
   instagramUrl: 'https://www.instagram.com/dbalakumaran23/',
   tagline: 'Crafting clean, high-retention short-form reels for weddings, creators, and couples.',
-  bio: 'Junior video editor specializing in rhythm-driven short-form reels and cinematic edits. I work with independent studios, videographers, and content creators to turn raw footage into high-retention, emotionally resonant videos across Instagram and YouTube.',
+  bio: 'Junior video editor specializing in short-form reels and cinematic edits. I work with independent studios, videographers, and content creators to turn raw footage into high-retention, emotionally resonant videos across Instagram and YouTube.',
   softwareSkills: [
     {
       name: 'Adobe Premiere Pro',
       experience: '2 Years Experience',
-      description: 'Primary NLE for multi-cam cutting, audio sync, narrative pacing, and timeline assembly.',
+      description: 'Primary editor for cuts, transitions, effects, audio sync, narrative pacing, and timeline assembly.',
       icon: '/icons/premiere-pro.svg',
-
     },
     {
       name: 'Photoshop',
       experience: '6 month experience',
-      description: 'Creating and refining visual assets, thumbnails, and graphics for video projects.',
+      description: 'Creating and refining visual elements and thumbnails.',
       icon: '/icons/photoshop.svg',
     },
     {
       name: 'DaVinci Resolve',
       experience: '6 Months Experience',
-      description: 'Color correction, skin tone balancing, LUT grading, and cinematic contrast curves.',
+      description: 'Color correction, skin tone balancing, and cinematic transitions.',
       icon: '/icons/davinci-resolve.svg',
     },
     {
       name: 'Adobe After Effects',
       experience: '6 Months Experience',
-      description: 'Motion graphics, graphic callouts, smooth tracking, and creative transitions.',
+      description: 'Motion graphics and creative transitions.',
       icon: '/icons/after-effects.svg',
     },
   ],
@@ -46,7 +45,7 @@ export const PROFILE_DATA: ProfileData = {
       id: 'studio-weddings',
       role: 'Junior Video Editor (Weddings & Ceremonies)',
       organization: 'Independent Studio',
-      period: '2023 – Present',
+      period: 'Sept 2025 - November 2025',
       summary:
         'Editing emotional, cinematic wedding films, teaser trailers, baby shower ceremonies, and Instagram reels from large multi-camera shoot archives.',
       deliverables: [
@@ -59,7 +58,7 @@ export const PROFILE_DATA: ProfileData = {
       id: 'junior-creator',
       role: 'Junior Video Editor for Content Creator',
       organization: 'Junior Video Editor (Creator Partnership)',
-      period: '2023 – Present',
+      period: 'Feb 2026 - Present',
       summary:
         'Partnering with an active content creator to edit talking-head videos, educational reels, and high-retention shorts.',
       deliverables: [
@@ -72,7 +71,7 @@ export const PROFILE_DATA: ProfileData = {
       id: 'junior-videographer',
       role: 'Junior Video Editor for Couple Videographer',
       organization: 'Junior Video Editor (Videographer Collaboration)',
-      period: '2024 – Present',
+      period: 'Jan 2026 - June 2026',
       summary:
         'Collaborating with a professional videographer editing couple photoshoots, pre-wedding reels, and romantic portrait sessions.',
       deliverables: [
@@ -84,7 +83,22 @@ export const PROFILE_DATA: ProfileData = {
   ],
   education: [
     {
+      id: 'pondicherry-university-mca',
+      type: 'degree',
+      institution: 'Pondicherry University',
+      program: 'Master of Computer Applications (MCA)',
+      period: '2024–2026',
+    },
+    {
+      id: 'smvas-computer-science-bsc',
+      type: 'degree',
+      institution: 'Sri Manakula Vinayagar School of Arts and Science',
+      program: 'B.Sc. Computer Science',
+      period: '2021–2024',
+    },
+    {
       id: 'aevy-video-cohort',
+      type: 'training',
       institution: 'Aevy Video School (Aevy TV)',
       program: 'Video Editing & Visual Storytelling Cohort',
       cohort: '12-Week Intensive Video Mastery Program',
@@ -122,11 +136,6 @@ export const PROFILE_DATA: ProfileData = {
           description:
             'Integrating AI-assisted transcription, subtitle generation pipelines, and automated rough-cut workflows for fast turnaround times.',
         },
-      ],
-      keyTakeaways: [
-        'Frame-by-frame direct critiques and project reviews from senior industry editors',
-        'Practical output-first "Quests" replicating high-stakes commercial and creator briefs',
-        'Holistic production skills covering storytelling, audio engineering, motion graphics, and content packaging',
       ],
     },
   ],
@@ -202,7 +211,7 @@ export const REELS_DATA: ReelItem[] = [
     comments: '16',
     description: 'Comment “RELIEF” and get the link to curafeet feet aligners.\n\nAd',
     toolsUsed: 'Premiere Pro',
-    coverImage: '/images/DVS2uvVEc2q.jpg',
+    coverImage: '/images/DVS2uvVEc2q.png',
     videoUrl: '/videos/DVS2uvVEc2q.mp4',
     instagramUrl: 'https://www.instagram.com/p/DVS2uvVEc2q/',
   },

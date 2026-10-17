@@ -20,12 +20,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="max-w-6xl mx-auto px-6">
         {/* Centered Hero Intro */}
         <div className="max-w-3xl mx-auto text-center flex flex-col items-center justify-center">
-          {/* Kicker */}
-          <div className="flex items-center justify-center gap-2 text-xs font-mono text-zinc-500 mb-4 tracking-wide uppercase">
-            <span>Junior Video Editor</span>
-            <span aria-hidden="true" className="text-zinc-300">·</span>
-            <span>Reels & Short-Form</span>
-          </div>
 
           {/* Headline */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-zinc-950 tracking-tight leading-[1.12] mb-5 [text-wrap:balance]">

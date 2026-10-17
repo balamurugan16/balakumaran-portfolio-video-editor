@@ -16,19 +16,13 @@ export const TopNav: React.FC = () => {
         {/* Zone 2: Navigation Links */}
         <nav className="flex items-center gap-7 text-sm font-medium text-zinc-600">
           <a href="#reels" className="hover:text-zinc-900 transition-colors whitespace-nowrap shrink-0">
-            Selected Reels
+            My Work
           </a>
           <a href="#experience" className="hover:text-zinc-900 transition-colors whitespace-nowrap shrink-0">
-            Experience (3)
+            Experience
           </a>
           <a href="#education" className="hover:text-zinc-900 transition-colors whitespace-nowrap shrink-0">
             Education
-          </a>
-          <a href="#about" className="hover:text-zinc-900 transition-colors whitespace-nowrap shrink-0">
-            About & Stack
-          </a>
-          <a href="#contact" className="hover:text-zinc-900 transition-colors whitespace-nowrap shrink-0">
-            Contact
           </a>
         </nav>
       </div>

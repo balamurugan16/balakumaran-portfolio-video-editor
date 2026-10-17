@@ -52,7 +52,7 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({ profile, onOpenRes
             <div className="p-6 rounded-2xl bg-white border border-zinc-200/80 shadow-sm">
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src={headshotImg}
+                  src='/headshot.webp'
                   alt={profile.name}
                   referrerPolicy="no-referrer"
                   className="w-20 h-20 rounded-2xl object-cover border border-zinc-200 shadow-sm"

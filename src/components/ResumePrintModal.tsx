@@ -29,7 +29,7 @@ export const ResumePrintModal: React.FC<ResumePrintModalProps> = ({ isOpen, onCl
         {/* Top Control Bar (Hidden on print) */}
         <div className="flex items-center justify-between pb-4 border-b border-zinc-200 mb-6 print:hidden">
           <div className="text-xs font-mono text-zinc-500 uppercase tracking-wider">
-            CV Widget · Minimal Resume
+            Resume
           </div>
 
           <div className="flex items-center gap-2">
@@ -158,15 +158,19 @@ export const ResumePrintModal: React.FC<ResumePrintModalProps> = ({ isOpen, onCl
                         {edu.period}
                       </span>
                     </div>
-                    <p className="text-zinc-600 leading-relaxed text-[11px]">{edu.summary}</p>
-                    <div className="grid grid-cols-2 gap-2 pt-1 border-t border-zinc-200/60">
-                      {edu.skillsLearned.slice(0, 4).map((s) => (
-                        <div key={s.title} className="text-[10px]">
-                          <span className="font-semibold text-zinc-800">{s.title}:</span>{' '}
-                          <span className="text-zinc-500">{s.description}</span>
-                        </div>
-                      ))}
-                    </div>
+                    {edu.summary && (
+                      <p className="text-zinc-600 leading-relaxed text-[11px]">{edu.summary}</p>
+                    )}
+                    {edu.skillsLearned && edu.skillsLearned.length > 0 && (
+                      <div className="grid grid-cols-2 gap-2 pt-1 border-t border-zinc-200/60">
+                        {edu.skillsLearned.slice(0, 4).map((s) => (
+                          <div key={s.title} className="text-[10px]">
+                            <span className="font-semibold text-zinc-800">{s.title}:</span>{' '}
+                            {/* <span className="text-zinc-500">{s.description}</span> */}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>

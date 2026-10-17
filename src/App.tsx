@@ -74,7 +74,6 @@ export default function App() {
         />
       )}
 
-      {/* Minimal Printable CV Widget */}
       {isResumeModalOpen && (
         <ResumePrintModal
           isOpen={isResumeModalOpen}

@@ -50,14 +50,14 @@ export interface ProfileData {
 
 export interface EducationItem {
   id: string;
+  type: 'degree' | 'training';
   institution: string;
   program: string;
-  cohort: string;
+  cohort?: string;
   period: string;
-  summary: string;
-  skillsLearned: {
+  summary?: string;
+  skillsLearned?: {
     title: string;
     description: string;
   }[];
-  keyTakeaways: string[];
 }
