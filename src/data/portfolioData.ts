@@ -1,4 +1,5 @@
 import { ReelItem, ProfileData } from '../types/portfolio';
+import { mediaUrl } from '../lib/media';
 
 export const PROFILE_DATA: ProfileData = {
   name: 'Balakumaran D',
@@ -153,8 +154,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '1,041',
     description: 'Over romanticisation in Tamil cinema 😭🏃\nP.C. @hari_photogenic the great!',
     toolsUsed: 'Davinci resolve',
-    coverImage: '/images/DWQPxdzkR-a.jpg',
-    videoUrl: '/videos/DWQPxdzkR-a.mp4',
+    coverImage: mediaUrl('images/DWQPxdzkR-a.jpg'),
+    videoUrl: mediaUrl('videos/DWQPxdzkR-a.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DWQPxdzkR-a/',
   },
   {
@@ -171,8 +172,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '38',
     description: 'Not arrogant, just better than you expected.',
     toolsUsed: 'Premiere Pro & DaVinci Resolve',
-    coverImage: '/images/DOTUt70j5SP.jpg',
-    videoUrl: '/videos/DOTUt70j5SP.mp4',
+    coverImage: mediaUrl('images/DOTUt70j5SP.jpg'),
+    videoUrl: mediaUrl('videos/DOTUt70j5SP.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DOTUt70j5SP/',
   },
   {
@@ -189,8 +190,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '36',
     description: 'Start Yoga 🧘 with cult store’s yoga mats guys!\nThank you @cultstore for the cute mat!',
     toolsUsed: 'Premiere Pro & Photoshop',
-    coverImage: '/images/DUYJ1_gkgEx.jpg',
-    videoUrl: '/videos/DUYJ1_gkgEx.mp4',
+    coverImage: mediaUrl('images/DUYJ1_gkgEx.jpg'),
+    videoUrl: mediaUrl('videos/DUYJ1_gkgEx.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DUYJ1_gkgEx/',
   },
   {
@@ -207,8 +208,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '16',
     description: 'Comment “RELIEF” and get the link to curafeet feet aligners.\n\nAd',
     toolsUsed: 'Premiere Pro',
-    coverImage: '/images/DVS2uvVEc2q.png',
-    videoUrl: '/videos/DVS2uvVEc2q.mp4',
+    coverImage: mediaUrl('images/DVS2uvVEc2q.png'),
+    videoUrl: mediaUrl('videos/DVS2uvVEc2q.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DVS2uvVEc2q/',
   },
   {
@@ -226,8 +227,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '793',
     description: 'Day 15/75 of the Penguin arc. Dark skin complexion is injurious!',
     toolsUsed: 'Premiere Pro',
-    coverImage: '/images/DUdcbzNkpol.jpg',
-    videoUrl: '/videos/DUdcbzNkpol.mp4',
+    coverImage: mediaUrl('images/DUdcbzNkpol.jpg'),
+    videoUrl: mediaUrl('videos/DUdcbzNkpol.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DUdcbzNkpol/',
   },
   {
@@ -245,8 +246,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '114',
     description: 'What are your thoughts?\n\ncredits to @mahlyf_mahrulez for few facts✨\n\n',
     toolsUsed: 'Da Vinci Resolve & Premiere Pro',
-    coverImage: '/images/DbmnP-GiDZf.jpg',
-    videoUrl: '/videos/DbmnP-GiDZf.mp4',
+    coverImage: mediaUrl('images/DbmnP-GiDZf.jpg'),
+    videoUrl: mediaUrl('videos/DbmnP-GiDZf.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DbmnP-GiDZf/',
   },
   {
@@ -264,8 +265,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '584',
     description: 'Top 3 countries which are the most racist towards Indians! My satire-mixed take on this!',
     toolsUsed: 'Premiere Pro & Da Vinci Resolve',
-    coverImage: '/images/DZQGuibisbB.jpg',
-    videoUrl: '/videos/DZQGuibisbB.mp4',
+    coverImage: mediaUrl('images/DZQGuibisbB.jpg'),
+    videoUrl: mediaUrl('videos/DZQGuibisbB.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DZQGuibisbB/',
   },
   {
@@ -283,8 +284,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '31',
     description: 'If you’re a man, you need to give buzz cut a try at least once in your life!\n7/180',
     toolsUsed: 'Premiere Pro',
-    coverImage: '/images/DaQiLEIidAO.jpg',
-    videoUrl: '/videos/DaQiLEIidAO.mp4',
+    coverImage: mediaUrl('images/DaQiLEIidAO.jpg'),
+    videoUrl: mediaUrl('videos/DaQiLEIidAO.mp4'),
     instagramUrl: 'https://www.instagram.com/p/DaQiLEIidAO/',
   },
   {
@@ -301,8 +302,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '14',
     description: 'Taran - ankita\n\nPre wedding shoot',
     toolsUsed: 'DaVinci Resolve & Premiere Pro',
-    coverImage: '/images/DHgF4_Azhmy.jpg',
-    videoUrl: '/videos/DHgF4_Azhmy.mp4',
+    coverImage: mediaUrl('images/DHgF4_Azhmy.jpg'),
+    videoUrl: mediaUrl('videos/DHgF4_Azhmy.mp4'),
     instagramUrl: 'https://www.instagram.com/reel/DHgF4_Azhmy/',
   },
   {
@@ -319,8 +320,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '15',
     description: 'PK 💝 reception candid',
     toolsUsed: 'DaVinci Resolve & Premiere Pro',
-    coverImage: '/images/DMdTC7oBtLG.jpg',
-    videoUrl: '/videos/DMdTC7oBtLG.mp4',
+    coverImage: mediaUrl('images/DMdTC7oBtLG.jpg'),
+    videoUrl: mediaUrl('videos/DMdTC7oBtLG.mp4'),
     instagramUrl: 'https://www.instagram.com/reel/DMdTC7oBtLG/',
   },
   {
@@ -337,8 +338,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '9',
     description: 'Save the date - Eshwar ❤️ Subha',
     toolsUsed: 'Davinci Resolve & Premiere Pro',
-    coverImage: '/images/DFSwmVwBWec.jpg',
-    videoUrl: '/videos/DFSwmVwBWec.mp4',
+    coverImage: mediaUrl('images/DFSwmVwBWec.jpg'),
+    videoUrl: mediaUrl('videos/DFSwmVwBWec.mp4'),
     instagramUrl: 'https://www.instagram.com/reel/DFSwmVwBWec/',
   },
   {
@@ -355,8 +356,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '6',
     description: 'Wedding teaser 🎬',
     toolsUsed: 'Davinci Resolve & Premiere Pro',
-    coverImage: '/images/DK4bAHvBTjc.jpg',
-    videoUrl: '/videos/DK4bAHvBTjc.mp4',
+    coverImage: mediaUrl('images/DK4bAHvBTjc.jpg'),
+    videoUrl: mediaUrl('videos/DK4bAHvBTjc.mp4'),
     instagramUrl: 'https://www.instagram.com/reel/DK4bAHvBTjc/',
   },
   {
@@ -373,8 +374,8 @@ export const REELS_DATA: ReelItem[] = [
     comments: '0',
     description: '“Growing a tiny human inside me” 💖🤩\n\nVC 🎥 @moorthi_sachin @studio_m_two',
     toolsUsed: 'Davinci Resolve & Premiere Pro',
-    coverImage: '/images/DOD3OYhD77Y.jpg',
-    videoUrl: '/videos/DOD3OYhD77Y.mp4',
+    coverImage: mediaUrl('images/DOD3OYhD77Y.jpg'),
+    videoUrl: mediaUrl('videos/DOD3OYhD77Y.mp4'),
     instagramUrl: 'https://www.instagram.com/reel/DOD3OYhD77Y/',
   },
 ];

@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "balakumaran-portfolio-video-editor",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-10-17",
+  "assets": {
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/media/*"]
+  },
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "balakumaran-portfolio",
+      "remote": true
+    }
+  ]
+}
